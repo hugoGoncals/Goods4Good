@@ -202,6 +202,19 @@ $products = DB::table('products')->select('description')->get();
         return $list; */
     }
 
+
+    public function listUrgentNeeds(){
+        
+                $list = DB::table('urgentneeds')
+                ->join('urgencystatus', 'urgentneeds.urgency', '=', 'urgencystatus.id')
+                //->where('products.idstatus', '=', '6')
+                ->select('urgentneeds.name','urgentneeds.quantity','urgentneeds.category','urgencystatus.status' )
+                ->get();
+        
+                return $list; 
+        
+            }
+
     /**
      * Remove the specified resource from storage.
      *

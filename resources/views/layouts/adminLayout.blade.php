@@ -82,6 +82,7 @@
         <script src="{{asset('/angular/controllers/ProviderController.js')}}"></script>
         <script src="{{asset('/angular/controllers/DonationsMadeController.js')}}"></script>
         <script src="{{asset('/angular/controllers/InboxController.js')}}"></script>  
+        <script src="{{asset('/angular/controllers/urgentNeedsController.js')}}"></script>  
     </head>
     <body>
         <div id="wrapper">
@@ -102,6 +103,7 @@
               <ul class="nav navbar-nav side-nav">
                 <li><a href="/provideradmin"><i class="fa fa-home" aria-hidden="true"></i> Home page</a></li>
                 <li><a href="/admin"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li><a href="/urgentNeeds"><i class="fa fa-product-hunt" aria-hidden="true"></i> Urgent Needs</a></li>
                 <li><a href="/baskets"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Baskets</a></li>
                 <li><a href="/productdelived"><i class="fa fa-handshake-o" aria-hidden="true"></i> Donations</a></li>
                 <li><a href="/productsList"><i class="fa fa-product-hunt" aria-hidden="true"></i> Products</a></li>

@@ -59,6 +59,10 @@ Route::get('/productsList', function() {
     return view('productsList');
 });
 
+Route::get('/urgentNeeds', function () {
+    return view('urgentNeeds');
+});
+
 Route::get('/productnotdelived', function(){
 	return view('productnotdelived');
 });
@@ -160,6 +164,9 @@ Route::get('api/product/listProductstatus/{id?}','ProductController@listProducts
 Route::get('api/product/newList/{id?}','ProductController@newList');
 Route::get('api/product/listarProducts/{id?}','ProductController@listarProducts');
 Route::post('api/product/status/change','ProductController@updateProductStatus');
+
+//necessity route 
+Route::get('api/urgentNeeds','ProductController@listUrgentNeeds');
 
 //categories route
 Route::get('api/categorie/{id?}','CategorieController@index');
